@@ -2,31 +2,41 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
 
 body {
   padding: 0;
   margin: 0;
+  background-image: url("https://thumbs.dreamstime.com/b/hand-holds-scale-hand-holds-scale-human-hand-justice-scales-vintage-engraving-vector-illustration-legale-balance-rights-151659711.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  
 }
 
 h1 {
-  width: 30%;
-  padding-top: 10px;
+  width: 100%;
+  padding-top: 30px;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 2px 2px #b1cae4;
   text-align: center;
-
 }
 
-.mainContainer {
+.emo {
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.maincontainer {
   width: 30%;
-  margin-left: 10px;
-  margin-top: 20px;
+  margin: 10px auto;
   padding: 10px 0;
   border: 1px solid #e9e2be;
-  background: #c3d1df;
-  box-shadow: 0px 3px 7px 0 #232425;
+  background: #2628296c;
+  box-shadow: 0 3px 7px 0 #232425;
 }
 
 .flex {
@@ -37,9 +47,12 @@ h1 {
   padding: 20px;
 }
 
-.leftside,
-.rightside {
-  font-size: 18px;
+#leftside,
+#rightside {
+  padding: 10px 0;
+  font-size: 14px;
+  border: none;
+  box-shadow: 0px 3px 7px 0 #232425;
 }
 
 #balance {
@@ -57,6 +70,14 @@ h1 {
   text-align: center;
   color: red;
   font-style: italic;
+  padding: 15px;
+}
+
+.displaynum {
+  text-align: center;
+  color: green;
+  font-size: 15px;
+  padding: 15px 0;
 }
 
 .class {
@@ -65,7 +86,7 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-  .mainContainer {
+  .maincontainer {
     width: 94vw;
   }
 

@@ -8,17 +8,28 @@
   <title>Scale balance</title>
 </head>
 <body>
-  <h1>Scale balance</h1>
-  <div class="mainContainer">
+  
+  <div class="maincontainer">
+    <h1>Scale balance</h1>
+  <div class="emo">⚖</div>
     <div class="flex">
-      <textarea id="leftside"></textarea>
-      <textarea id="rightside"></textarea>
+      <input id="leftside" type="text" placeholder="Enter first weight in kg">
+      <input id="rightside" type="text" placeholder="Enter second weight in kg">
     </div>
     <div class="class">
-      <button id="balance">Calculate</button>
+      <div class="displaynum"></div>
       <div class="display"></div>
+      <button id="balance">Calculate</button>
+      
     </div>
   </div>
   
 </body>
+
+<script type="text/javascript">
+  let left = document.querySelector('#leftside').value
+  let right = document.querySelector('#rightside').value
+  
+</script>
+
 </html>
