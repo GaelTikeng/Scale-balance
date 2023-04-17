@@ -18,8 +18,6 @@ calculate.addEventListener('click', () => {
       }
     }
   }
-
-  console.log('done');
 });
 
 
