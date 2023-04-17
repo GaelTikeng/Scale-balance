@@ -1,21 +1,32 @@
-let left = document.getElementById('leftside')
-let right = document.getElementById('rightside')
-let arr = document.getElementById('scale')
+const l = document.getElementById('leftside');
+const r = document.getElementById('rightside');
+const arr = document.getElementById('scale');
+const calculate = document.querySelector('.balance');
 
-function scaleBalance () {
-  for (let i=0; i<=arr.length; i++) {
-    for (let j=0; j<= arr.length; j++) {
-      if ((left + arr[i]) === (right + arr[j])) {
-        document.getElementsByClassName('displaynum').innerHTML = `${arr[i]} and ${arr[j]} are needed to balance ${left} and ${right} respectively`
+
+calculate.addEventListener('click', () => {
+  const newArr = JSON.parse(arr.value);
+
+  for (let i = 0; i <= newArr.length; i++) {
+    for (let j = 0; j <= newArr.length; j++) {
+      if ((+l.value + newArr[i]) === (+r.value + newArr[j])) {
+        document.querySelector('.displaynum').innerHTML = `${newArr[i]} and ${newArr[j]} are needed to balance ${l.value} and ${r.value} respectively`
+        return;
       }
-      else {
-        document.getElementsByClassName('display').innerHTML = "Cannot Balance"
+      else if (i === newArr.length - 1) {
+        document.querySelector('.display').innerHTML = "Cannot Balance"
       }
     }
   }
-  return 
 
-}
+  console.log('done');
+});
+
+
+
+
+
+  
 
 
   

@@ -67,7 +67,7 @@ h1 {
   justify-content: center;
 }
 
-#balance {
+.balance {
   display: flex;
   margin: 0 auto;
   border-radius: 10px;
@@ -87,7 +87,7 @@ h1 {
 
 .displaynum {
   text-align: center;
-  color: green;
+  color: #fff;
   font-size: 15px;
   padding: 15px 0;
 }
