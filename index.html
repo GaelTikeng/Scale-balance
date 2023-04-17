@@ -16,20 +16,18 @@
       <input id="leftside" type="text" placeholder="Enter first weight in kg">
       <input id="rightside" type="text" placeholder="Enter second weight in kg">
     </div>
+    <input id="scale" type="text" placeholder="ex: [1, 5, 6, 8]">
     <div class="class">
       <div class="displaynum"></div>
       <div class="display"></div>
-      <button id="balance">Calculate</button>
+      <button id="balance" onclick="scaleBalance()">Calculate</button>
       
     </div>
   </div>
   
 </body>
 
-<script type="text/javascript">
-  let left = document.querySelector('#leftside').value
-  let right = document.querySelector('#rightside').value
-  
+<script type="text/javascript" src="scaleBalance.js">
 </script>
 
 </html>
