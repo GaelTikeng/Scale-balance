@@ -12,7 +12,7 @@ calculate.addEventListener('click', () => {
         document.querySelector('.displaynum').innerHTML = `${newArr[i]} and ${newArr[j]} are needed to balance ${leftWeight.value} and ${rightWeight.value} respectively`
         return
       } else if (i === newArr.length - 1) {
-        document.querySelector('.display').innerHTML = 'Cannot Balance'
+        document.querySelector('.displaynum').innerHTML = 'Cannot Balance'
       }
     }
   }
