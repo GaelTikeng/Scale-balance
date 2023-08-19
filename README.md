@@ -11,3 +11,5 @@ Scale-Balance was built with :
 * HTML
 * CSS
 * JavaScript
+***
+Check out the app here [https://gaeltikeng.github.io/Scale-balance/](https://gaeltikeng.github.io/Scale-balance/)
