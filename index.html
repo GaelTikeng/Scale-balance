@@ -8,14 +8,26 @@
   <title>Scale balance</title>
 </head>
 <body>
-  <div class="mainContainer">
+  
+  <div class="maincontainer">
+    <h1>Scale balance</h1>
+  <div class="emo">⚖</div>
     <div class="flex">
-      <textarea id="leftside"></textarea>
-      <textarea id="rightside"></textarea>
+      <input id="leftside" type="number" placeholder="Enter first weight in kg" required>
+      <input id="rightside" type="number" placeholder="Enter second weight in kg" required>
     </div>
-    <button id="balance">Calculate</button>
-    <div class="display"></div>
+    <input id="scale" type="text" placeholder="ex: 1, 5, 6, 8" required>
+    <div class="class">
+      <div class="displaynum"></div>
+      <div class="display"></div>
+      <button class="balance">Balance</button>
+      
+    </div>
   </div>
   
 </body>
+
+<script type="text/javascript" src="./assets/script/scaleBalance.js">
+</script>
+
 </html>
